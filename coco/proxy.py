@@ -154,7 +154,7 @@ class ProxyServer(object):
             data = {
                 "proxy_log_id": proxy_log_id,
                 "date_finished": time.time(),
-                "was_failed": 1
+                "is_failed": 1
             }
             self.service.finish_proxy_log(data)
             return None
